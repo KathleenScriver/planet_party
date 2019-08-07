@@ -1,13 +1,13 @@
 <h1>Planets</h1>
 
-<div>
+<div class='planet-list'>
   <% @ordered_planets.each do |planet| %>
-    <div id=<%= "planet-#{planet.id}" %>
-      <h3>Position: <%= planet.position %></h3>
+    <div id=<%= "planet-#{planet.id}" %> class="planet-item">
+      <h4>Position: <%= planet.position %></h4>
+      <img src=<%= planet.image %>>
       <p>Name: <%= link_to planet.name, planet_path(planet) %></p>
       <p>Info: <%= planet.info %></p>
       <p><%= "Has Rings!" if planet.has_rings %></p>
-      <br/>
     </div>
   <% end %>
 </div>

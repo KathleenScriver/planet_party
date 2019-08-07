@@ -14,17 +14,21 @@
  *= require_self
  */
 body {
-  background-color: hsl(90, 50%, 50%)
+  background-color: hsl(290, 40%, 70%)
 }
 
-div {
-  font-size: 30px;
+img {
+  width: 400px;
 }
 
-.planet-info {
-  font-size: 2px;
+.planet-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
 
-#planet-1 {
-  background-color: red;
+.planet-item {
+  display: flex;
+  flex-direction: column;
+
 }
