@@ -4,10 +4,15 @@
   <% @ordered_planets.each do |planet| %>
     <div id=<%= "planet-#{planet.id}" %> class="planet-item">
       <h4>Position: <%= planet.position %></h4>
-      <img src=<%= planet.image %>>
-      <p>Name: <%= link_to planet.name, planet_path(planet) %></p>
-      <p>Info: <%= planet.info %></p>
-      <p><%= "Has Rings!" if planet.has_rings %></p>
+      <div class='planet-info'>
+        <img src=<%= planet.image %>>
+        <div class='planet-data'>
+          <p>Name: <%= link_to planet.name, planet_path(planet) %></p>
+          <p>Galaxy: <%= planet.galaxy %></p>
+          <p>Info: <%= planet.info %></p>
+          <p><%= "Has Rings!" if planet.has_rings %></p>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>

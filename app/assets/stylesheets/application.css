@@ -27,8 +27,15 @@ img {
   margin-left: 15px;
 }
 
-.planet-item {
+.planet-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  align-content: space-between;
+  padding: 8px;
+}
 
+.planet-data {
+  padding: 13px;
 }
