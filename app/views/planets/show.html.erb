@@ -1,0 +1,13 @@
+<h1><%= @planet.name %></h1>
+
+<h3>Position: <%= @planet.position %></h3>
+
+<div class='planet-info'>
+  <p>Name: <%= @planet.name %></p>
+  <p>Info: <%= @planet.info %></p>
+  <p><%= "Has Rings!" if @planet.has_rings %></p>
+</div>
+
+<div>
+  <%= link_to "Back", planets_path %>
+</div>
